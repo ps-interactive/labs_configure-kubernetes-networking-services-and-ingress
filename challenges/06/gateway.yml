@@ -1,0 +1,15 @@
+---
+apiVersion: networking.x-k8s.io/v1alpha1
+kind: Gateway
+metadata:
+  name: pluralsight-web
+  namespace: challenge6
+spec:
+  gatewayClassName: example-gc
+  listeners:
+  - protocol: HTTP
+    port: 80
+    name: pluralsight-web-gw
+    allowedRoutes:
+      namespaces:
+        from: All
