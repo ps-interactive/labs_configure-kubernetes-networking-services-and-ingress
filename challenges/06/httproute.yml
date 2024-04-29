@@ -6,6 +6,8 @@ metadata:
 spec:
   parentRefs:
   - name: pluralsight-web
+  hostnames:
+  - "www.pluralsight-challenge6.com"
   rules:
   - backendRefs:
     - name: pluralsight-svc
